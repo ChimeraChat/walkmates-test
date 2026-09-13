@@ -26,6 +26,18 @@ Four labs, all **mandatory**, all done **in pairs**.
 > **Labs 1–3 are done in the WalkMates repository.** **Lab 4 is the exception** — a paper-based
 > analysis submitted via Canvas.
 
+### Repository choice and teacher access
+
+For Labs 1–3, your pair may work in a public fork of WalkMates or clone it locally and push
+to your own private GitHub repository, whichever is easier. Private repositories must invite
+the teaching team so they can access the submitted commit and CI evidence. Include the
+repository link and a specific commit/tag in your Canvas submission.
+
+Reflections and written analyses do not need to be public or stored in Git. Word and other
+writing tools are welcome. Use the required reflection questions and include all written
+artifacts requested by the lab, then export to PDF for Canvas. Markdown files and suggested
+repository paths are optional; no duplicate Markdown copy is required.
+
 The labs are designed as one journey up the **test-level ladder**: run the system → write your
 first test → specification-based unit tests (Lab 1) → structural coverage and component
 isolation (Lab 2) → testing an AI feature through its interface (Lab 3) → step back and reason
@@ -55,9 +67,9 @@ Each lab submission has **two parts**:
    and (where relevant) **mutation score**. *You do not submit screenshots — the CI result is
    the evidence.* (Lab 4 has no repo/CI part.)
 2. **A short reflection (graded by the instructor).** One reflection per lab, using the fixed
-   [`reflection-template.md`](reflection-template.md). Copy the template rather than editing it
-   in place, and save the result as `reflections/labN-reflection.md` (replace `N` with 1, 2, 3,
-   or 4). **This is the artifact graded for understanding.** Keep it short and specific —
+   [`reflection-template.md`](reflection-template.md) questions. Write in a separate document
+   or optionally copy the template to `reflections/labN-reflection.md`. Submit the reflection
+   in your Canvas PDF. **This is the artifact graded for understanding.** Keep it short and specific —
    judgment, not length.
 
 A lab **passes** when the CI evidence meets the lab's stated bar **and** the reflection shows
@@ -68,10 +80,10 @@ genuine understanding.
 
 ## 4. What you submit (per lab)
 
-- **Labs 1–3:** a link to your pair's repo at a specific commit/tag + the corresponding completed
-  `reflections/labN-reflection.md`. Each lab file below states where its other short artifacts
-  belong.
-- **Lab 4:** the paper-based analysis + `reflections/lab4-reflection.md`, via Canvas.
+- **Labs 1–3:** upload a PDF containing your completed reflection, the lab's other required
+  written artifacts, and a link to your pair's repository at a specific commit/tag. Ensure
+  the teaching team has access if it is private.
+- **Lab 4:** upload a PDF containing the paper-based analysis and completed reflection to Canvas.
 
 No long synthesized report is required.
 
@@ -90,7 +102,7 @@ why**. Honesty about AI use does not lower your grade.
 
 ## 7. Getting started
 
-1. Clone your pair's WalkMates repo.
+1. Choose a public fork or your own private repository, then clone your pair's working repo.
 2. `mvn clean test` — confirm `BUILD SUCCESS` (the project ships green).
 3. Do the [`FIRST_TEST_TUTORIAL.md`](../FIRST_TEST_TUTORIAL.md) (10 min).
 4. Open [`01-LAB1-FUNDAMENTALS.md`](01-LAB1-FUNDAMENTALS.md).

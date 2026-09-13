@@ -3,8 +3,10 @@
 > One per lab. Keep it **short and specific** — this is graded for *understanding*, not length.
 > Half a page to a page is plenty. Bullet points are fine.
 >
-> **Before writing:** copy this file to `reflections/labN-reflection.md`, replacing `N` with the
-> lab number. Keep this template unchanged so it remains available for the next lab.
+> **Before writing:** use the questions below in Word or another document, or optionally copy
+> this file to `reflections/labN-reflection.md`. Keep this template unchanged. Submit the
+> completed reflection as part of your Canvas PDF. It need not be public or stored in Git,
+> and no duplicate Markdown copy is required.
 
 **Lab:** (1 / 2 / 3 / 4)
 **Pair:** (names)

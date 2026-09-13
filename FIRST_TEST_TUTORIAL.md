@@ -18,8 +18,12 @@ again. On a university-managed computer where you cannot install software, use t
 environment or contact course support.
 
 The build stops early with a clear message when Maven is using an incompatible Java or Maven
-version. Once both checks pass, clone the pair repository provided for the course and you are
-ready. The GitHub Student Developer Pack is optional.
+version. Once both checks pass, choose a public fork of WalkMates or clone it locally and push
+to your pair's own private GitHub repository. Invite the teaching team to private repositories
+so they can access your submitted commit and CI evidence. Work locally in your chosen clone.
+The GitHub Student Developer Pack is optional. See the
+[general instructions](lab-instructions/00-GENERAL-INSTRUCTIONS.md) for PDF submission and
+optional Markdown reflection files.
 
 ## 2. Build and run the whole test suite (2 min)
 

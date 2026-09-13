@@ -61,8 +61,8 @@ testing the **interface**, not a live model.
 2. Use one idea from the literature to **justify a test improvement** you made in Part A (e.g.
    why metamorphic testing is the right tool when you lack an oracle).
 
-Write the comparison in `lab3-trend-review.md` at the repository root and link it from your Lab
-3 reflection.
+Include the comparison in your written document for Canvas. Word or another tool is fine;
+`lab3-trend-review.md` is an optional Markdown filename. It need not be public or in Git.
 
 ---
 
@@ -74,5 +74,8 @@ implemented and passing, plus the 200-path added to the controller test.
 
 ## Submission
 
-Repo link/commit + `lab3-trend-review.md` + completed `reflections/lab3-reflection.md`, created
-from the [`reflection template`](reflection-template.md).
+Upload a PDF to Canvas containing your trend comparison, completed
+[`reflection template`](reflection-template.md) questions, and repository link with a specific
+commit/tag. Use a public fork or your own private repository with teaching-team access.
+Markdown analysis/reflection files are optional; no duplicate Markdown submission or public
+reflection is required.

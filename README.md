@@ -65,11 +65,24 @@ day-one win, then **[lab-instructions/00-GENERAL-INSTRUCTIONS.md](lab-instructio
 
 ## How you're assessed
 
+### Where to work and write
+
+For Labs 1–3, choose whichever setup is easier for your pair: fork WalkMates and work in a
+public fork, or clone it locally and push your work to your own private GitHub repository.
+If your repository is private, invite the teaching team and ensure they can access the
+submitted commit and CI evidence. Include a repository link and commit/tag in your submission.
+
+You do not need to publish reflections or written analyses in a public repository. Use the
+reflection template's questions, but write in Word or another tool if you prefer. Markdown
+files and the suggested repository paths are optional. Export the required written material
+to PDF and upload it to the corresponding Canvas assignment. No duplicate Markdown copy is
+required. Lab 4 is paper-based and needs no repository.
+
 **Machines grade mechanics, humans grade understanding.** When you push, GitHub Actions runs the
 build, tests, JaCoCo (coverage) and PIT (mutation) and posts a summary. That CI result is the
 evidence — no screenshots. You also submit one short
-[`reflection`](lab-instructions/reflection-template.md) per lab, saved as
-`reflections/labN-reflection.md`, which is what the instructor grades. Using AI is encouraged;
+[`reflection`](lab-instructions/reflection-template.md) per lab in your Canvas PDF.
+`reflections/labN-reflection.md` is an optional Markdown location. Using AI is encouraged;
 the reflection is where you show your judgment over what it produced.
 
 ## Tech
@@ -93,7 +106,7 @@ src/main/java/com/walkmates/
 src/test/java/com/walkmates/
   lab1/ lab2/ lab3/   starter tests + skeletons you extend
 docs/REQUIREMENTS.md   the spec your tests are derived from
-reflections/           your four completed lab reflections
+reflections/           optional location for Markdown lab reflections
 ```
 
 For educational use.

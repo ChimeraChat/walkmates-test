@@ -25,9 +25,10 @@ reason about the ethics of AI-augmented testing.
 
 ## Submission
 
-A short paper-based analysis (SUsAF map + discussion) **+** the completed
-`reflections/lab4-reflection.md`, created from the
-[`reflection template`](reflection-template.md), via **Canvas**. No repo/CI part.
+Upload a PDF containing the short paper-based analysis (SUsAF map + discussion) and completed
+[`reflection template`](reflection-template.md) questions to **Canvas**. You may write in Word
+or another tool. `reflections/lab4-reflection.md` is an optional Markdown location, not a
+required extra file. No public reflection, repository, or CI part is required.
 
 ## Resources
 

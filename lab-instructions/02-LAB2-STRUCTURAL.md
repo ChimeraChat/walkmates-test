@@ -90,8 +90,8 @@ scenario, or simulate one by editing `PricingCalculator`). Given the change, **s
 prioritize** which existing tests must re-run and justify the order. Which tests are
 change-relevant, and which are wasteful to run every time?
 
-Write the analysis in `lab2-regression-selection.md` at the repository root and summarize or
-link to it from your Lab 2 reflection.
+Include the analysis in your written document for Canvas. Word or another tool is fine;
+`lab2-regression-selection.md` is an optional Markdown filename. It need not be public or in Git.
 
 ---
 
@@ -105,6 +105,8 @@ CI can generate the required evidence.
 
 ## Submission
 
-Repo link/commit + `lab2-regression-selection.md` + completed
-`reflections/lab2-reflection.md`, created from the
-[`reflection template`](reflection-template.md).
+Upload a PDF to Canvas containing your regression-selection analysis, completed
+[`reflection template`](reflection-template.md) questions, and repository link with a specific
+commit/tag. Use a public fork or your own private repository with teaching-team access.
+Markdown analysis/reflection files are optional; no duplicate Markdown submission or public
+reflection is required.

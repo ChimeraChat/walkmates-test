@@ -35,9 +35,9 @@ You are given this **failure report**:
 > There are a couple more seeded faults in the system. You are not asked to find them all here;
 > Activity 1.2 is about reasoning, not bug-hunting.
 
-Record Activities 1.1 and 1.2 in a short Markdown file at the repository root (recommended name:
-`lab1-analysis.md`). Use the same file for the Part B design tables below, and link it from your
-Lab 1 reflection.
+Record Activities 1.1 and 1.2 and the Part B design tables in your written document for Canvas.
+You may use Word or another tool. If you prefer Markdown, `lab1-analysis.md` is an optional
+filename. The written work need not be public or committed to the repository.
 
 ### Activity 1.3 — Your first test (day-one win)
 Complete the [`FIRST_TEST_TUTORIAL.md`](../FIRST_TEST_TUTORIAL.md) if you haven't. Confirm
@@ -75,6 +75,8 @@ EP, BVA and decision-table tests present and passing. (Coverage is reported but 
 
 ## Submission
 
-Repo link/commit + `lab1-analysis.md` (or your clearly named equivalent) + completed
-`reflections/lab1-reflection.md`, created from the
-[`reflection template`](reflection-template.md). No long synthesized report.
+Upload a PDF to Canvas containing your short analysis and design tables, completed
+[`reflection template`](reflection-template.md) questions, and repository link with a specific
+commit/tag. Use a public fork or your own private repository with teaching-team access.
+Markdown files such as `lab1-analysis.md` and `reflections/lab1-reflection.md` are optional;
+no duplicate Markdown submission or public reflection is required. Keep the writing concise.
