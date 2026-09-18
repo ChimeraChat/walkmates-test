@@ -10,4 +10,4 @@ target/
 *.log
 .DS_Store
 data/
-mcp.json
+.mcp.json
