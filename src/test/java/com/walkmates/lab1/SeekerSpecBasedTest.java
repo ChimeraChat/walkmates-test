@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -61,7 +62,7 @@ class SeekerSpecBasedTest {
     @ParameterizedTest
     @ValueSource(strings = {
             "L8tta",
-            "Lottafannieshellaandgooliatformelodyandjohanndesa",
+            "Lottafannyellashellvandagabrielandreasmelodyochjohannessplusen",
             "L"
     })
     void invalidDisplayNamesAreRejected(String name) {
@@ -77,7 +78,7 @@ class SeekerSpecBasedTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"0853000843", "076300084399"})
+    @ValueSource(strings = {"0853000843", "076300084399", "076300084", "07630abc43"})
     void invalidPhoneFormatsAreRejected(String phone) {
         assertThrows(IllegalArgumentException.class,
                 () -> new Seeker("louise@miun.se", "Louise Larsen", phone));
@@ -92,6 +93,56 @@ class SeekerSpecBasedTest {
     void topUpOverMaximumBalanceIsRejected() {
         Seeker seeker = seekerWithBalance(19600.00);
         assertRejectedTopUpLeavesBalance(seeker, 500.00, 19600.00);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"@miun.se", "louise@miun"})
+    void emailWithMissingFormatComponentIsRejected(String email) {
+        assertThrows(IllegalArgumentException.class,
+                () -> new Seeker(email, "Louise Larsen", "0763000843"));
+    }
+
+    @ParameterizedTest
+    @NullAndEmptySource
+    void missingEmailIsRejected(String email) {
+        assertThrows(IllegalArgumentException.class,
+                () -> new Seeker(email, "Louise Larsen", "0763000843"));
+    }
+
+    @ParameterizedTest
+    @NullAndEmptySource
+    void missingDisplayNameIsRejected(String name) {
+        assertThrows(IllegalArgumentException.class,
+                () -> new Seeker("louise@miun.se", name, "0763000843"));
+    }
+
+    @ParameterizedTest
+    @NullAndEmptySource
+    void missingPhoneIsRejected(String phone) {
+        assertThrows(IllegalArgumentException.class,
+                () -> new Seeker("louise@miun.se", "Louise Larsen", phone));
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"Anne-Marie", "O'Connor"})
+    void namesWithAllowedPunctuationAreAccepted(String name) {
+        Seeker seeker = new Seeker("louise@miun.se", name, "0763000843");
+        assertThat(seeker.getDisplayName()).isEqualTo(name);
+    }
+
+    @Test
+    void typicalValidTopUpIsAccepted() {
+        Seeker seeker = newSeeker();
+        seeker.addFunds(250.00);
+        assertThat(seeker.getBalance()).isEqualTo(250.00);
+    }
+
+    @ParameterizedTest
+    @ValueSource(doubles = {0.00, -250.00, 6000.00})
+    void invalidTopUpPartitionsLeaveBalanceUnchanged(double amount) {
+        Seeker seeker = newSeeker();
+        seeker.addFunds(250.00);
+        assertRejectedTopUpLeavesBalance(seeker, amount, 250.00);
     }
 
     // Activity 2.2: wallet boundaries from FR-1.3.
